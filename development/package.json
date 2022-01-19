@@ -2,21 +2,21 @@
   "name": "nodejs_mainserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
-    "start": "node ../dist/app/src/index.js",
-    "dev": "nodemon index.ts",
+    "start": "node ../dist/index.js",
+    "dev": "nodemon src/index.ts",
     "build": "tsc && cp package.json ../dist && cd ../dist && npm install --only=production "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "env-var": "^7.1.1",
     "express": "^4.17.2",
     "helmet": "^4.6.0",
-    "hpp": "^0.2.3",
-    "winston": "^3.4.0"
+    "hpp": "^0.2.3"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
